@@ -4,7 +4,7 @@
 
 const express = require("express")
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 ///----------------------------------------------------
 app.get( '/', (req, res) => indexPage(req, res) );
@@ -13,7 +13,7 @@ function indexPage(req, res) {
 }
 
 ///----------------------------------------------------
-const PORT = process.env.PORT || 8080;
+
 app.listen( PORT, 
     () => { console.log('Server RUNNING - %d ', PORT); }
     );
