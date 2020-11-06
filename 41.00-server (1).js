@@ -3,8 +3,8 @@
 /// npm  install express --save
 
 const express = require("express")
-const app = express();
-const PORT = 8080;
+const hostname = '127.0.0.1';
+const port = process.env.PORT || 8080;
 
 ///----------------------------------------------------
 app.get( '/', (req, res) => indexPage(req, res) );
