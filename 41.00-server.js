@@ -4,7 +4,7 @@
 
 const express = require("express")
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT.env = 8080;
 
 ///----------------------------------------------------
 app.get( '/', (req, res) => indexPage(req, res) );
