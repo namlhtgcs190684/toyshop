@@ -22,8 +22,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "npm run build && node 41.00-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node 41.00-server.js",
+    "test":"echo\"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
