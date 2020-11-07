@@ -2,12 +2,7 @@
   "name": "shop",
   "version": "1.0.0",
   "description": "",
-  "main": "41.00-server.js",
-   "scripts": {
-
-   "start": "node 41.00-server.js",
-    "test":"echo\"Error: no test specified\" && exit 1"
-  },
+  "main": "41.01-server (1).js",
   "dependencies": {
     "atob": "^2.1.2",
     "bson": "^4.2.0",
@@ -26,6 +21,10 @@
     "express-session": "^1.17.1"
   },
   "devDependencies": {},
+  "scripts": {
+    "start": "node 41.01-server (1).js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
   "license": "ISC"
 }
