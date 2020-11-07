@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('../template/head', { title: title  } ); %>
+    </head>
+    <body>
+
+        <header>
+            <%- include ('../template/header', { username: username , configHeader:configHeader, currpage : currpage  }); %>
+        </header>
+
+        <main>
+            <div class="container" >
+                <div class="jumbotron">
+                    <h1>ATN Shop</h1>
+                    <p>ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. </p>
+                    <p>
+                      <a class="btn btn-lg btn-primary" href="/product" role="button">View Catalog »</a>
+                    </p>
+                  </div>
+            </div>
+        </main>
+          
+        
+        <%- include ('../template/footer'); %>
+        
+
+    </body>
+
+</html> 
