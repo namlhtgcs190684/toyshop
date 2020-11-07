@@ -1,13 +1,13 @@
 module.exports = {
     localdb: {
-        urldb : 'mongodb://localhost:27017/toyshop',
+        urldb : 'mongodb+srv://namlh:<namhcm2001>@toyshop.alpmw.mongodb.net/<toyshop>?retryWrites=true&w=majority',
         dbname : "toyshop",
         dbusername : "",
         dbpassword : "",
     },
 
     clouddb: {
-        urldb : 'mongodb://localhost:27017/toyshop',
+        urldb : 'mongodb+srv://namlh:<namhcm2001>@toyshop.alpmw.mongodb.net/<toyshop>?retryWrites=true&w=majority',
         dbname : "toyshop",
         dbusername : "",
         dbpassword : "",
