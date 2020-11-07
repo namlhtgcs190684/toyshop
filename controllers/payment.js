@@ -26,8 +26,16 @@ router.use(function timeLog (req, res, next) {
 })
 
 router.get('/', payment);
+
 function payment(req,res){
+    if (session.user) 
+    {
     var price = req.query.price;
     res.render("pages/payment", {title: "ATN-Shop Payment USER page", Notify: "",prices:price, configHeader: configHeader , currpage: "Payment" });
+}
+else {
+    res.redirect('/login');
+}    
+console.log("\n\t ... connect PRODUCT from ", req.connection.remoteAddress, req.headers.host);
 }
 module.exports = router;
