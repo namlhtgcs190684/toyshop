@@ -1,1 +1,1 @@
-<?php include_once("71.01.mvc.js");
+<?php include_once("home.html");
