@@ -30,11 +30,7 @@ const PORT = process.env.PORT || 8080;
 var urldb = configDB.localdb.urldb;
 const uri = "mongodb+srv://namlh:namhcm2001@toyshop.alpmw.mongodb.net/toyshop?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
 
 
 
@@ -299,6 +295,11 @@ function clientPage(req, res) {
 
     res.render("pages/client", clientinf);
     console.log('\n\n\t ....... ', clientinf);
+  client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
     /// LOG
     writeLog(clientinf);
