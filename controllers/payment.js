@@ -17,7 +17,7 @@ var storage = multer.diskStorage({
 var uploadStore = multer({ storage: storage });
 
 const dbname = 'toyshop';
-const uri = 'mongodb://localhost:27017/' + dbname;
+const uri = 'mongodb+srv://namlh:namhcm2001@toyshop.alpmw.mongodb.net/toyshop?retryWrites=true&w=majority';
 
 /// --- Code CONTROLLERs
 router.use(function timeLog (req, res, next) {
