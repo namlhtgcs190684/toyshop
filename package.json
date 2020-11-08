@@ -1,6 +1,9 @@
 {
   "name": "shop4-11",
   "version": "1.0.0",
+  "engines": {
+  "node": "15.0.1"
+    }
   "description": "",
   "main": "71.0.mvc.js",
   "dependencies": {
@@ -26,9 +29,7 @@
     "start": "node 71.0.mvc.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "15.0.1"
-  }
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/namlhtgcs190684/toyshop.git"
