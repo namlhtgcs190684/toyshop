@@ -10,8 +10,7 @@ var router = express.Router();
 const bodyParser= require('body-parser');
 var multer = require('multer');
 
-var mongodb = require('mongodb');
-var MongoClient = mongodb.MongoClient;
+
 
 var app = express();
 
@@ -26,8 +25,17 @@ var atob = require('atob');
 /// ------------------ CONFIG
 var configHeader = require("./configs/config_Header");
 var configDB = require("./configs/config_DB");
-const PORT = 8080;
+const PORT = process.env.PORT;
 var urldb = configDB.localdb.urldb;
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://namlh:namhcm2001@toyshop.alpmw.mongodb.net/toyshop?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 
 
@@ -374,6 +382,6 @@ function qrPage(req, res) {
 
 /// ------------------ gọi SERVER thực thi
 
-app.listen( PORT, 
-    () => { console.log('Server RUNNING - %d ', PORT); }
+app.listen( 8080, 
+    () => { console.log('Server RUNNING - %d ', 8080); }
     );
