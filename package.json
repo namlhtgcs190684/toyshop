@@ -1,9 +1,6 @@
 {
   "name": "shop4-11",
   "version": "1.0.0",
-  "engines": {
-  "node": "15.0.1"
-    }
   "description": "",
   "main": "71.0.mvc.js",
   "dependencies": {
@@ -41,3 +38,6 @@
   },
   "homepage": "https://github.com/namlhtgcs190684/toyshop#readme"
 }
+"engines": {
+  "node": "15.0.1"
+    }
